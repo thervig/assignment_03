@@ -109,7 +109,7 @@ def check_in(point, point_list):
                  in the form [point, point_1, point_2, ..., point_n]
     """
  
-    return point[0, 1] in point_list # Add the logic to check if a point is in the point list here
+    return point[1] in point_list # Add the logic to check if a point is in the point list here
 
 
 def getx(point):
