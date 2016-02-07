@@ -24,7 +24,7 @@ def manhattan_distance(a, b):
                The Manhattan distance between the two points
     """
 
-    distance = sum(abs(b[0] - a[0]), abs(b[1] - a[1]))  # Add the algorithm to compute manhattan distance here
+    distance = (abs(b[0] - a[0]) + abs(b[1] - a[1]))  # Add the algorithm to compute manhattan distance here
     return distance
 
 
@@ -43,7 +43,7 @@ def euclidean_distance(a, b):
                The Euclidean distance between the two points
     """
   
-    distance = math.sqrt((b[0] - a[0]) + (b[1] - a[1])) # Add the euclidean distance algorithm here
+    distance = math.sqrt((b[0] - a[0])**2 + (b[1] - a[1])**2) # Add the euclidean distance algorithm here
     return distance
 
 
@@ -74,8 +74,8 @@ def shift_point(point, x_shift, y_shift):
     x = getx(point)
     y = gety(point)
 
-    x_new = 1  # Add the logic to shift x here
-    y_new = 2  # Add the logic to shift y here
+    x_new = 3  # Add the logic to shift x here
+    y_new = 4 # Add the logic to shift y here
 
     return x_new, y_new
 
