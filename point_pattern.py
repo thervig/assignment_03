@@ -74,8 +74,8 @@ def shift_point(point, x_shift, y_shift):
     x = getx(point)
     y = gety(point)
 
-    x_new = 3  # Add the logic to shift x here
-    y_new = 4 # Add the logic to shift y here
+    x_new = shift_point  # Add the logic to shift x here
+    y_new = shift_point # Add the logic to shift y here
 
     return x_new, y_new
 
