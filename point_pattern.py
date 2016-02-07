@@ -26,7 +26,7 @@ def manhattan_distance(a, b):
 
     a = (4, 5)
     b = (3, 6)
-    distance = sum(abs(a - b))  # Add the algorithm to compute manhattan distance here
+    distance = math.hypot(abs(b[0] - a[0]), abs(b[1] - a[1]))  # Add the algorithm to compute manhattan distance here
     return distance
 
 
@@ -46,7 +46,7 @@ def euclidean_distance(a, b):
     """
     a = (4, 5)
     b = (3, 6)
-    distance = math.sqrt(sum(pow(a - b, 2)))  # Add the euclidean distance algorithm here
+    distance = math.hypot(b[0] - a[0], b[1] - a[1]) # Add the euclidean distance algorithm here
     return distance
 
 
