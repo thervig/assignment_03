@@ -24,8 +24,6 @@ def manhattan_distance(a, b):
                The Manhattan distance between the two points
     """
 
-    a = (4, 5)
-    b = (3, 6)
     distance = math.hypot(abs(b[0] - a[0]), abs(b[1] - a[1]))  # Add the algorithm to compute manhattan distance here
     return distance
 
@@ -44,8 +42,7 @@ def euclidean_distance(a, b):
     distance : float
                The Euclidean distance between the two points
     """
-    a = (4, 5)
-    b = (3, 6)
+  
     distance = math.hypot(b[0] - a[0], b[1] - a[1]) # Add the euclidean distance algorithm here
     return distance
 
@@ -97,8 +94,7 @@ def check_coincident(a, b):
     equal : bool
             Whether the points are equal
     """
-    a = 1
-    b = 1.0
+  
     return (a==b)  # Add the logic to check if coincident here
 
 
@@ -112,8 +108,8 @@ def check_in(point, point_list):
     point_list : list
                  in the form [point, point_1, point_2, ..., point_n]
     """
-    list = [1, 2, 3, 4, 5]
-    return 6 in list # Add the logic to check if a point is in the point list here
+ 
+    return point[0, 1] in point_list # Add the logic to check if a point is in the point list here
 
 
 def getx(point):
