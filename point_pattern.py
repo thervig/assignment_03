@@ -99,7 +99,7 @@ def check_coincident(a, b):
     """
     a = 1
     b = 1.0
-    return a==b  # Add the logic to check if coincident here
+    return (a==b)  # Add the logic to check if coincident here
 
 
 def check_in(point, point_list):
