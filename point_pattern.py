@@ -67,15 +67,15 @@ def shift_point(point, x_shift, y_shift):
     Note that the new_x new_y elements are returned as a tuple
     Example
     -------
-    >>> point = (0, 0)
+    >>> point = (0,0)
     >>> shift_point(point, 1, 2)
-    (1, 2)
+    (1,2)
     """
     x = getx(point)
     y = gety(point)
-
-    x_new = x_shift(3)  # Add the logic to shift x here
-    y_new = y_shift(4) # Add the logic to shift y here
+    
+    x_new = point[0] + x_shift  # Add the logic to shift x here
+    y_new = point[1] + y_shift # Add the logic to shift y here
 
     return x_new, y_new
 
